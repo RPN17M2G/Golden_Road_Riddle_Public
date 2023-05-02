@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+
+  client_react:
+    build: ./client_react
+    container_name: client_react_c
+    ports:
+      - '3000:3000'
+    
+  flask_server:
+    build: ./webapp
+    container_name: flask_server_c
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./webapp:/db
