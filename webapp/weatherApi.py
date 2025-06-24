@@ -17,7 +17,7 @@ NUMBER_OF_HOURS_A_DAY = 24
 THREE_AFTER_THE_DECIMAL_POINT = 3
 
 
-API_KEY = "1067ca546d8e48318b380656230202"
+API_KEY = "**********"
 
 def get_take_off_hours(date):
     '''
