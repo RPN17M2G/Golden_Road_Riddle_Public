@@ -1,19 +1,30 @@
-# Golden_Road_Riddle
+# Golden Road Riddle
 
-A riddle published to determine who is qualified for getting sorted to the Golden Road Team.
+This project is a full-stack web application designed as part of a riddle challenge to identify candidates for the **Golden Road Team**.
 
+## Overview
 
-A full-stack small scale project that lets you input
-the mass of the Cargo for an aircraft
-and shows you the time takes to take off,
-the distance the road must be for take off
-and if the time for take off is greater than
-60 seconds - it shows the amount of mass
-to burn in order to take off in under 60 seconds.
-and also shows you the hours when the temperature in specific coordinates(The example in the code was chosen randomly) is fit for take off.
+The application allows users to input the **mass of an aircraft's cargo** and receive the following outputs:
 
-The project includes JS(React) frontend and Python(Flask) backend with an Api for the weather report and Sqlite3 database.
-The project also uses simple Physics formulas.
+- **Time required for takeoff**
+- **Minimum runway length needed for takeoff**
+- If takeoff time exceeds **60 seconds**, it calculates:
+  - The **amount of mass to reduce** to achieve takeoff in under 60 seconds
+- **Recommended hours for takeoff** based on temperature data at specific coordinates
 
-A public version of the Golden Road Riddle repository. Lacks the commits and issues of the original repository.
-Created different and new public repository because original repository included private information.
+The physics behind the calculations is based on simplified motion formulas.
+
+## Technologies
+
+- **Frontend**: React (JavaScript)
+- **Backend**: Flask (Python)
+- **Database**: SQLite3
+- **External API**: Used to fetch real-time weather data
+
+## Purpose
+
+This public repository was created as a cleaned version of the original, which contained private data. It omits the original issues and commit history.
+
+## Note
+
+The coordinates used for temperature calculations are example values and can be adjusted.
